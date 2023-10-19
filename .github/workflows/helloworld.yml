@@ -4,8 +4,11 @@ on:
   workflow_dispatch:
   pull_request:
     branches:
-    - b2
+      - 'b/**'
   push:
+    branches:
+      - 'main'
+      - 'b/**'
 
 jobs:
   say_hello:
